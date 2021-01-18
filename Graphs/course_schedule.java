@@ -38,7 +38,7 @@ class Solution {
                 return false;
             }
         }
-        //the graph has no cycles that means it does not finish all courses
+        //the graph has no cycles that means it finish all courses
         //so it returns true
         return true;
     }
