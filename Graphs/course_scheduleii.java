@@ -17,11 +17,14 @@ class Solution {
     }
     public void topologicalSort(List<ArrayList<Integer>> adj,int[] arr,int n){
         boolean vis[]=new boolean[n];
+        //create a stack
         Stack<Integer> st = new Stack<Integer>();
         for(int i=0;i<n;i++){
+            //if not visited call topological
             if(!vis[i])
                 topological(adj,vis,st,i);
         }
+        //add all elements in to a list from stack
         while(!st.isEmpty()){
             list.add(st.pop());
         }
