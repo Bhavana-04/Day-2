@@ -14,7 +14,7 @@ class Solution {
             Node curr=q.poll();
             //iterate all neighbors
             for(Node adj:curr.neighbors){
-                //if it is not int the hashmap then add in to a queue and map
+                //if it is not in the hashmap then add in to a queue and map
                 if(!hm.containsKey(adj)){
                     Node newNode=new Node(adj.val);
                     hm.put(adj,newNode);
